@@ -3,7 +3,8 @@
     "lts": "^1.2.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "ghworkflowtest": "jest"
   },
   "devDependencies": {
     "jest": "^29.7.0"
