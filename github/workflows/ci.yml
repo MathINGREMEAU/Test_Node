@@ -2,9 +2,11 @@ name: test_node_github_action
 
 on: 
   pull_request:
-    branches: [main]
+    branches: 
+      - '**'
   push:
-    branches: [main]
+    branches: 
+      - '**'
   
 
   jobs:
