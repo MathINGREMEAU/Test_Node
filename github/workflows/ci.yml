@@ -1,0 +1,14 @@
+on: 
+  push:
+    branches:
+      - 'main'
+  pull_request:
+    branches:
+      - 'main'
+
+  jobs:
+    Test_GitHub_Actions :
+      runs-on : ubuntu-latest
+      steps:
+        - run: || npm i lst
+        - run: || npm test
