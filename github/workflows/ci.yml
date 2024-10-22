@@ -1,3 +1,5 @@
+name: test_node_github_action
+
 on: 
   push:
     branches:
