@@ -11,5 +11,5 @@ on:
     Test_GitHub_Actions :
       runs-on : ubuntu-latest
       steps:
-        - run: npm i lst
-        - run: npm test
+        - uses: actions/setup-node@v1
+        - run: npm run test
