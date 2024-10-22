@@ -1,5 +1,11 @@
 {
   "dependencies": {
     "lts": "^1.2.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
