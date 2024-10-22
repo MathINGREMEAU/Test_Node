@@ -10,5 +10,5 @@ on:
     Test_GitHub_Actions :
       runs-on : ubuntu-latest
       steps:
-        - run: || npm i lst
-        - run: || npm test
+        - run: npm i lst
+        - run: npm test
