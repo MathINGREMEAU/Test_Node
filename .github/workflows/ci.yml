@@ -1,0 +1,19 @@
+name: test_node_github_action
+
+on: 
+  pull_request:
+    branches: 
+      - '**'
+  push:
+    branches: 
+      - '**'
+  
+
+jobs:
+  Test_GitHub_Actions :
+    runs-on : ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: npm install
+      - run: npm test
