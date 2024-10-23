@@ -3,12 +3,11 @@ name: test_node_github_action
 on: 
   pull_request:
     branches: 
-      - '**'
+      - master
   push:
     branches: 
-      - '**'
+      - master
   
-
 jobs:
   Test_GitHub_Actions :
     runs-on : ubuntu-latest
