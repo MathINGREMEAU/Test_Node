@@ -4,7 +4,6 @@ on:
   push:
     branches: 
       - test_action
-  
 
 jobs:
   Test_GitHub_Actions :
