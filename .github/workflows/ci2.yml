@@ -6,7 +6,7 @@ on:
       - test_action
 
 jobs:
-  Test_GitHub_Actions :
+  job1 :
     runs-on : ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,7 +17,7 @@ jobs:
       - run: npm test
 
   the_merge :
-      - needs: Test_GitHub_Actions
+      - needs: job1
       - name: merge
         uses: devmasx/merge-branch@master
         with:
