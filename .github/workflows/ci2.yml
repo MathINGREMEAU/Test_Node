@@ -17,12 +17,15 @@ jobs:
       - run: npm test
 
   the_merge :
-      - needs: job1
-      - name: merge
-        uses: devmasx/merge-branch@master
-        with:
-          type: now
-          target_branch: master
-          github_token: ${{ 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 }}
+        runs-on : ubuntu-latest
+        needs: job1
+        steps:
+        - uses: actions/checkout@master
+        - name: merge
+          uses: devmasx/merge-branch@master
+          with:
+            type: now
+            target_branch: master
+            github_token: ${{ secrets.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 }}
 
 # faire une 2e branche : quand on push dessus, ça doit déclencher la CI, et le GitHub Action doit exécuter les tests, et si les tests sont bons, merge ta branche
