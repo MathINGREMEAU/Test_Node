@@ -23,6 +23,6 @@ jobs:
         with:
           type: now
           target_branch: master
-          github_token: ${{ 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 }}
+          github_token: ${{ gitHub_TOKEN }}
 
 # faire une 2e branche : quand on push dessus, ça doit déclencher la CI, et le GitHub Action doit exécuter les tests, et si les tests sont bons, merge ta branche
