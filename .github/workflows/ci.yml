@@ -19,3 +19,6 @@ jobs:
           node-version: 20
       - run: npm install
       - run: npm test
+
+
+# faire une 2e branche : quand on push dessus, ça doit déclencher la CI, et le GitHub Action doit exécuter les tests, et si les tests sont bons, merge ta branche
